@@ -1,3 +1,4 @@
 #!/bin/bash
 cp ctxt $PREFIX/bin
-chmod 777 $PREFIX/bin/ctxtt
+chmod 777 $PREFIX/bin/ctxt
+ctxt 
