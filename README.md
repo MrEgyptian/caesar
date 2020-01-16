@@ -1,2 +1,3 @@
 # caesar
-#A simple code for caesar cipher 
+#An example code for caesar cipher in bash script 
+by using tr command
