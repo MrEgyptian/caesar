@@ -1,0 +1,105 @@
+#!/bin/bash
+c=$(tput cols)
+red="\033[1;91m"
+green="\033[1;92m"
+y="\033[1;93m"
+white="\033[1;37m"
+oc=$((${#o1}+6))
+echo -e ${white}
+echo "┌────────────────────────────────────────────────────────────┐"
+echo "│                                                            │"
+echo "│  _|_|_|    _|_|_|    _|_|      _|_|_|    _|_|_|  _|  _|_|  │"
+echo "│_|        _|    _|  _|_|_|_|  _|_|      _|    _|  _|_|      │"
+echo "│_|        _|    _|  _|            _|_|  _|    _|  _|        │"
+echo "│  _|_|_|    _|_|_|    _|_|_|  _|_|_|      _|_|_|  _|        │"
+echo "│           by:ahmed;GitHub:github.com/ahmedmahmed8a         │"
+echo "│           WA:+201150119895;                                │"
+echo "└────────────────────────────────────────────────────────────┘"
+echo ;echo;
+if [[ -z $1 ]]; then
+	#statements
+	if [[ -z $(cat <&0<<'eof') ]]; then
+		#statements
+		read -p "text to encode/decode > " stdin
+	else
+		stdin=$(cat <&0)
+	fi
+else
+	stdin=$1
+fi
+
+o1=$(echo $stdin|tr [a-z] [b-za-a]|tr [A-Z] [B-ZA-A])
+o2=$(echo $stdin|tr [a-z] [c-za-b]|tr [A-Z] [B-ZA-A])
+o3=$(echo $stdin|tr [a-z] [d-za-c]|tr [A-Z] [B-ZA-A])
+o4=$(echo $stdin|tr [a-z] [e-za-d]|tr [A-Z] [B-ZA-A])
+o5=$(echo $stdin|tr [a-z] [f-za-e]|tr [A-Z] [B-ZA-A])
+o6=$(echo $stdin|tr [a-z] [g-za-f]|tr [A-Z] [B-ZA-A])
+o7=$(echo $stdin|tr [a-z] [h-za-g]|tr [A-Z] [B-ZA-A])
+o8=$(echo $stdin|tr [a-z] [i-za-h]|tr [A-Z] [B-ZA-A])
+o9=$(echo $stdin|tr [a-z] [j-za-i]|tr [A-Z] [B-ZA-A])
+o10=$(echo $stdin|tr [a-z] [k-za-j]|tr [A-Z] [B-ZA-A])
+o11=$(echo $stdin|tr [a-z] [l-za-k]|tr [A-Z] [B-ZA-A])
+o12=$(echo $stdin|tr [a-z] [m-za-l]|tr [A-Z] [B-ZA-A])
+o13=$(echo $stdin|tr [a-z] [n-za-m]|tr [A-Z] [B-ZA-A])
+o14=$(echo $stdin|tr [a-z] [o-za-n]|tr [A-Z] [B-ZA-A])
+o15=$(echo $stdin|tr [a-z] [p-za-o]|tr [A-Z] [B-ZA-A])
+o16=$(echo $stdin|tr [a-z] [q-za-p]|tr [A-Z] [B-ZA-A])
+o17=$(echo $stdin|tr [a-z] [r-za-q]|tr [A-Z] [B-ZA-A])
+o18=$(echo $stdin|tr [a-z] [s-za-r]|tr [A-Z] [B-ZA-A])
+o19=$(echo $stdin|tr [a-z] [t-za-s]|tr [A-Z] [B-ZA-A])
+o20=$(echo $stdin|tr [a-z] [u-za-t]|tr [A-Z] [B-ZA-A])
+o21=$(echo $stdin|tr [a-z] [v-za-u]|tr [A-Z] [B-ZA-A])
+o22=$(echo $stdin|tr [a-z] [w-za-v]|tr [A-Z] [B-ZA-A])
+o23=$(echo $stdin|tr [a-z] [x-za-w]|tr [A-Z] [B-ZA-A])
+o24=$(echo $stdin|tr [a-z] [y-za-x]|tr [A-Z] [B-ZA-A])
+
+echo -e $green
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 1:" $y$o1| fmt -c -w $COLUMNS
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 2:" $y$o2
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 3:" $y$o3
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 4:" $y$o4
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 5:" $y$o5
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 6:" $y$o6
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 7:" $y$o7
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 8:" $y$o8
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 9:" $y$o9
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 10:" $y$o10
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 11:" $y$o11
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 12:" $y$o12
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 13:" $y$o13
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 14:" $y$o14
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 15:" $y$o15
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 16:" $y$o16
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 17:" $y$o17
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 18:" $y$o18
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 19:" $y$o19
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 20:" $y$o20
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 21:" $y$o21
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 22:" $y$o22
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 23:" $y$o23
+head -c $c /dev/zero | tr '\0' '_'
+echo -e $red "Offset 24:" $y$o24
+head -c $c /dev/zero | tr '\0' '_'
